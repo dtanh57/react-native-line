@@ -2,10 +2,10 @@ buildscript {
     //Buildscript is evaluated before everything else so we can't use getExtOrDefault
     def kotlin_version = rootProject.ext.has('kotlinVersion') ? rootProject.ext.get('kotlinVersion') : project.properties['ReactNativeLine_kotlinVersion']
     ext {
-        buildToolsVersion = "28.0.3"
-        minSdkVersion = 21
-        compileSdkVersion = 28
-        targetSdkVersion = 28
+        buildToolsVersion = "30.0.2"
+        minSdkVersion = 23
+        compileSdkVersion = 31
+        targetSdkVersion = 31
         coroutinesAndroidVersion = "1.0.1"
         coroutinesCoreVersion = "1.0.1"
         gsonVersion = "2.8.6"
@@ -17,7 +17,8 @@ buildscript {
     }
 
     dependencies {
-        classpath "com.android.tools.build:gradle:3.5.1"
+        classpath("com.android.tools.build:gradle:4.2.2")
+        classpath('com.google.gms:google-services:4.3.10')
         //noinspection DifferentKotlinGradleVersion
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "com.linecorp.linesdk:linesdk:5.7.1"
@@ -39,11 +40,11 @@ def safeExtGet(prop, fallback) {
 }
 
 android {
-    compileSdkVersion safeExtGet("compileSdkVersion", 28)
+    compileSdkVersion safeExtGet("compileSdkVersion", 31)
 
     defaultConfig {
-        minSdkVersion safeExtGet('minSdkVersion', 21)
-        targetSdkVersion safeExtGet('targetSdkVersion', 28)
+        minSdkVersion safeExtGet('minSdkVersion', 23)
+        targetSdkVersion safeExtGet('targetSdkVersion', 31)
         versionCode 1
         versionName "1.0"
     }
