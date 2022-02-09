@@ -20,7 +20,7 @@ buildscript {
         classpath "com.android.tools.build:gradle:3.5.1"
         //noinspection DifferentKotlinGradleVersion
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath "com.linecorp.linecorp:linesdk:5.7.1"
+        classpath "com.linecorp.linesdk:linesdk:5.7.1"
     }
 }
 
@@ -58,7 +58,7 @@ android {
 
 dependencies {
     implementation "com.facebook.react:react-native:+"
-    implementation "com.linecorp.linecorp:linesdk:5.7.1"
+    implementation "com.linecorp.linesdk:linesdk:5.7.1"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.50"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesAndroidVersion"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesCoreVersion"
