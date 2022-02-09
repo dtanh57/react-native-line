@@ -59,7 +59,7 @@ android {
 dependencies {
     implementation "com.facebook.react:react-native:+"
     implementation "com.linecorp.linesdk:linesdk:5.7.1"
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.0"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesAndroidVersion"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesCoreVersion"
 }
