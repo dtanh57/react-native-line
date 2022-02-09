@@ -21,7 +21,6 @@ buildscript {
         classpath('com.google.gms:google-services:4.3.10')
         //noinspection DifferentKotlinGradleVersion
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath "com.linecorp.linesdk:linesdk:5.7.1"
     }
 }
 
